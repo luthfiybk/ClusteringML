@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Heart Failure Prediction</title>
+</head>
+<body class="font-gill sans bg-rose-800">
+    <div class="container mx-auto">
+        <div class="flex justify-center px-6 my-12">
+            <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg">
+                    <div class="px-8 mb-4 text-center">
+                        <h3 class="pt-4 mb-2 text-4xl"><b>Heart Failure Prediction</b></h3>
+                        
+                    </div>
+                    <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded" action="/result" method="POST">
+                        <div class="mb-4">
+                            <label class="block mb-2 text-sm font-bold text-gray-700" for="name">
+                                Name
+                            </label>
+                            <input required
+                                class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="name"
+                                type="text"
+                                placeholder="Enter Your Name"
+                                name="name"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2 text-sm font-bold text-gray-700" for="cholesterol">
+                                Cholesterol (0-600)
+                            </label>
+                            <input required
+                                class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="cholesterol"
+                                type="number"
+                                placeholder="Enter Your Cholesterol"
+                                name="cholesterol"
+                                min="0"
+                                max="600"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2 text-sm font-bold text-gray-700" for="heart_rate">
+                            Heart Rate (60-202)
+                            </label>
+                            <input required
+                                class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="heart_rate"
+                                type="number"
+                                placeholder="Enter Your Heart Rate"
+                                name="heart_rate"
+                                min="60"
+                                max="202"
+                            />
+                        </div>
+                        <div class="mb-2 text-center">
+                            <input required
+                                class="w-full px-4 py-2 font-bold text-white bg-pink-600 cursor-pointer rounded-full hover:bg-pink-400 focus:outline-none focus:shadow-outline"
+                                type="submit"
+                                value="Submit"
+                            >
+                            </input>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
